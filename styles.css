@@ -1,0 +1,415 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.company-details {
+    text-align: left;
+    flex: 1;
+    min-width: 200px;
+}
+
+.company-details h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.company-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.header-bottom {
+    margin-top: 20px;
+}
+
+.header-bottom h1 {
+    margin: 10px 0;
+    font-size: 28px;
+    color: #007BFF;
+}
+
+.header-bottom h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 20px;
+}
+
+.amendment-procedures h2,
+.agreement-form h2,
+.introduction h2,
+.employment-practices h2,
+.compensation-benefits h2,
+.attendance-policy h2,
+.termination-policies h2 {
+    font-size: 22px;
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.subsection {
+    margin-bottom: 20px;
+}
+
+.sub-subsection {
+    margin-bottom: 15px;
+}
+
+.amendment-procedures h3,
+.agreement-form h3,
+.introduction h3,
+.employment-practices h3,
+.compensation-benefits h3,
+.attendance-policy h3,
+.termination-policies h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.amendment-procedures h4,
+.agreement-form h4,
+.introduction h4,
+.employment-practices h4,
+.compensation-benefits h4,
+.attendance-policy h4,
+.termination-policies h4 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.amendment-procedures p,
+.agreement-form p,
+.introduction p,
+.employment-practices p,
+.compensation-benefits p,
+.attendance-policy p,
+.termination-policies p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.amendment-procedures ul,
+.agreement-form ul,
+.introduction ul,
+.employment-practices ul,
+.compensation-benefits ul,
+.attendance-policy ul,
+.termination-policies ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.amendment-procedures ul li,
+.agreement-form ul li,
+.introduction ul li,
+.employment-practices ul li,
+.compensation-benefits ul li,
+.attendance-policy ul li,
+.termination-policies ul li {
+    margin: 5px 0;
+}
+
+/* Nested Lists */
+.amendment-procedures ul ul,
+.agreement-form ul ul,
+.introduction ul ul,
+.employment-practices ul ul,
+.compensation-benefits ul ul,
+.attendance-policy ul ul,
+.termination-policies ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Navigation Buttons Styles */
+.navigation-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.navigation-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Agreement Form Styles */
+.agreement-form {
+    margin-top: 40px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.required {
+    color: red;
+    margin-left: 2px;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .company-details {
+        text-align: center;
+    }
+
+    .header-bottom h1 {
+        font-size: 24px;
+    }
+
+    .header-bottom h3 {
+        font-size: 14px;
+    }
+
+    .amendment-procedures h2,
+    .agreement-form h2,
+    .introduction h2,
+    .employment-practices h2,
+    .compensation-benefits h2,
+    .attendance-policy h2,
+    .termination-policies h2 {
+        font-size: 20px;
+    }
+
+    .subsection h3,
+    .agreement-form h3,
+    .introduction h3,
+    .employment-practices h3,
+    .compensation-benefits h3,
+    .attendance-policy h3,
+    .termination-policies h3 {
+        font-size: 16px;
+    }
+
+    .sub-subsection h4,
+    .agreement-form h4,
+    .introduction h4,
+    .employment-practices h4,
+    .compensation-benefits h4,
+    .attendance-policy h4,
+    .termination-policies h4 {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 15px 20px;
+    }
+
+    .navigation-buttons {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-buttons button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    .header-bottom h1 {
+        font-size: 20px;
+    }
+
+    .header-bottom h3 {
+        font-size: 12px;
+    }
+
+    .amendment-procedures h2,
+    .agreement-form h2,
+    .introduction h2,
+    .employment-practices h2,
+    .compensation-benefits h2,
+    .attendance-policy h2,
+    .termination-policies h2 {
+        font-size: 18px;
+    }
+
+    .subsection h3,
+    .agreement-form h3,
+    .introduction h3,
+    .employment-practices h3,
+    .compensation-benefits h3,
+    .attendance-policy h3,
+    .termination-policies h3 {
+        font-size: 14px;
+    }
+
+    .sub-subsection h4,
+    .agreement-form h4,
+    .introduction h4,
+    .employment-practices h4,
+    .compensation-benefits h4,
+    .attendance-policy h4,
+    .termination-policies h4 {
+        font-size: 14px;
+    }
+
+    .amendment-procedures p,
+    .agreement-form p,
+    .introduction p,
+    .employment-practices p,
+    .compensation-benefits p,
+    .attendance-policy p,
+    .termination-policies p,
+    .amendment-procedures ul,
+    .agreement-form ul,
+    .introduction ul,
+    .employment-practices ul,
+    .compensation-benefits ul,
+    .attendance-policy ul,
+    .termination-policies ul {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px 15px;
+    }
+
+    .navigation-buttons button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="date"] {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

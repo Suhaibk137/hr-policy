@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Agreement Form - Page 7 of 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-top">
+                <img src="Untitled.png" alt="Company Logo" class="logo"> <!-- Replace with your actual logo -->
+                <div class="company-details">
+                    <h2>Elite Professional Solutions Pvt Ltd</h2>
+                    <p>Known As <strong>Elite Resumes</strong></p>
+                    <p>Website: <a href="https://www.eliteresumes.co">www.eliteresumes.co</a></p>
+                    <p>Email: <a href="mailto:support@eliteresumes.co">support@eliteresumes.co</a>, <a href="mailto:createresumewithus@gmail.com">createresumewithus@gmail.com</a></p>
+                    <p>CIN: U82192KL2023PTC085396</p>
+                </div>
+            </div>
+            <hr>
+            <div class="header-bottom">
+                <h1>HR Agreement Form</h1>
+                <h3>Page 7 of 7</h3>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+            <section class="amendment-procedures">
+                <h2>15. Amendment Procedures</h2>
+                <p>At Elite Professional Solutions Pvt Ltd, it is essential to maintain a dynamic and responsive HR policy framework that evolves with the changing needs of the organization and the external environment. This section outlines the procedures for amending HR policies and ensuring that all employees are informed and acknowledge their understanding of these changes.</p>
+                
+                <div class="subsection">
+                    <h3>15.1 Policy Changes</h3>
+                    
+                    <div class="sub-subsection">
+                        <h4>15.1.1 Authority to Amend Policies</h4>
+                        <p><strong>Exclusive Authority:</strong></p>
+                        <ul>
+                            <li>Elite Professional Solutions Pvt Ltd retains full authority to amend, modify, or update any section of the HR policies at its sole discretion. This ensures that the company can swiftly adapt to new legal requirements, industry standards, and organizational needs.</li>
+                        </ul>
+                    </div>
+
+                    <div class="sub-subsection">
+                        <h4>15.1.2 Communication of Policy Changes</h4>
+                        <p><strong>Notification Method:</strong></p>
+                        <ul>
+                            <li>All policy changes will be communicated to employees via official company email addresses (<a href="mailto:support@eliteresumes.co">support@eliteresumes.co</a> and <a href="mailto:createresumewithus@gmail.com">createresumewithus@gmail.com</a>). Important updates may also be posted on the company’s intranet or internal communication platforms as deemed appropriate.</li>
+                        </ul>
+                        
+                        <p><strong>Advance Notice:</strong></p>
+                        <ul>
+                            <li>Employees will receive adequate notice prior to the implementation of significant policy changes to allow sufficient time for review and adjustment. The notice period will depend on the nature and impact of the changes.</li>
+                        </ul>
+                        
+                        <p><strong>Detailed Documentation:</strong></p>
+                        <ul>
+                            <li>Each policy amendment will be accompanied by detailed documentation outlining the specific changes, the reasons behind them, and the effective date. This documentation ensures transparency and clarity regarding the modifications.</li>
+                        </ul>
+                    </div>
+
+                    <div class="sub-subsection">
+                        <h4>15.1.3 Implementation of Policy Changes</h4>
+                        
+                        <p><strong>Effective Date:</strong></p>
+                        <ul>
+                            <li>All amendments will specify an effective date from which the new or revised policies will be applicable. This date will be clearly stated in the communication to avoid any confusion.</li>
+                        </ul>
+                        
+                        <p><strong>Training and Support:</strong></p>
+                        <ul>
+                            <li>When necessary, the company will provide training sessions or informational meetings to explain the changes and address any questions or concerns employees may have. This ensures smooth implementation and adherence to the updated policies.</li>
+                        </ul>
+                        
+                        <p><strong>Review and Feedback:</strong></p>
+                        <ul>
+                            <li>Following the implementation of significant policy changes, the HR department may solicit feedback from employees to assess the effectiveness and impact of the amendments. This feedback loop facilitates continuous improvement and employee engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Agreement Form Section -->
+            <section class="agreement-form">
+                <h2>Employee Agreement</h2>
+                <form action="https://script.google.com/macros/s/AKfycbzsL5TBtC_wUdZ_l7g9AnTEzuNQuTXBMOwqgvwHDti850akU-JYzLvnI_cG_CaNu56M/exec" method="POST" class="form-container">
+                    <div class="form-group">
+                        <label for="name">Name<span class="required">*</span>:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email ID<span class="required">*</span>:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact">Contact Number<span class="required">*</span>:</label>
+                        <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Date<span class="required">*</span>:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I agree to the HR policies outlined in this agreement.</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </section>
+        
+            <script>
+                document.querySelector('form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    fetch(this.action, {
+                        method: 'POST',
+                        body: new FormData(this)
+                    })
+                    .then(response => response.text())
+                    .then(result => {
+                        if (result === "Success!") {
+                            alert("Form submitted successfully!");
+                            this.reset();
+                        } else {
+                            alert("There was an error submitting the form. Please try again.");
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert("There was an error submitting the form. Please try again.");
+                    });
+                });
+            </script>
+        </main>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button onclick="location.href='page6.html'">Previous</button>
+            <!-- The Submit button is part of the form above -->
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <hr>
+            <p>© 2024 Elite Professional Solutions Pvt Ltd. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
